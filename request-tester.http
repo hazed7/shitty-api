@@ -1,0 +1,25 @@
+### Get all
+GET http://localhost:3049/api/users
+Accept: application/json
+
+### Get by ID
+GET http://localhost:3049/api/users/1
+Accept: application/json
+
+### Create
+POST http://localhost:3049/api/users
+Content-Type: application/json
+
+{
+    username: "abobus",
+    email: "abobus@email.com",
+    roles: ["customer"],
+}
+
+### Update by ID
+PATCH http://localhost:3049/api/users/1
+Content-Type: application/json
+
+{
+    username: "huy",
+}
